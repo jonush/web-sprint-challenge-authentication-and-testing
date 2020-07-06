@@ -26,11 +26,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
 
+- **sessions**** use cookies to send `key:value` pairs of data between the client and the server. These are unique for each device and web domain, as they cannot be sent to other domains. They are also stored in the browser. **JSON Web Tokens** are used to validate credentials by providing a JSON object that is cryptographically signed using an algorithm to secure and supply authentication data. The data is encoded and signed with a secret and sent in the header.
+
 2. What does `bcrypt` do to help us store passwords in a secure manner.
+
+- **bcryptjs** is a node module used for password hashing. It enables hash rounds that increase the security for passwords. It can take in plain text passwords and compare them to hashes in the database to verify credentials.
 
 3. How are unit tests different from integration and end-to-end testing.
 
+- **Unit tests** are focused around specific functions or small isolated sections of code. THese are intended to be fast and simple. They can test for immediate changes to the code, but can also be susceptible to regression. **Integration tests** are slower than unit tests, but test how the bigger components of code can work together. They can also test API endpoints and http status codes. **End to End tests** test how overall systems of code operate. These are important for reducing the risk of regression and preventing defects in your code.
+
 4. How _Test Driven Development_ changes the way we write applications and tests.
+
+- **Test Driven Development** (TDD) helps developers write better code by challenging them to assess multiple scenarios for how the code may function. In doing so, they can better prepare for success and fail cases for when the code runs. (It can be similarly compared to pure functions in JavaScript.)
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
